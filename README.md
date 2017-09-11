@@ -54,3 +54,9 @@ function strftime_rus($format, $date = FALSE) {
     return strftime($rusformat, $timestamp);
 }
 ```
+
+Вызов функции:
+```php
+ $arr['BIRTHDATE'] = strftime_rus("%e %B2", strtotime($arr['BIRTHDATE']));
+```
+Получается дата из формата <b>1994-26-11</b> переходит в <b>26 ноября</b>
